@@ -1,0 +1,80 @@
+digraph G {
+  // https://graphviz.christine.website
+  
+  poy [label="Pictures of you"];
+  anlt [label="A night like this"];
+  kyoto [label="Kyoto song"];
+  fs [label="Fascination Street"];
+  fs2 [label="Fascination Street2"];
+  ibd [label="Inbetween Days"];
+  p4t [label="Play for today"];
+  sds [label="Shake Dog Shake"]
+  n39 [label="39"]
+  charlotte [label="Charlotte Sometimes"]
+  prayers [label="Prayers for rain"]
+  anif [label="And Nothing is Forever"]
+  asd [label="A Strange Day"]
+  aforest [label="A Forest"]
+
+  // riga
+  Alone -> poy;
+  poy -> Closedown  [weight=3];
+  Closedown -> anlt  [weight=2];
+  anlt -> Lovesong  [weight=6];
+  Lovesong -> Trust;
+  Trust -> Burn;
+  Burn -> fs [weight=7];
+  fs -> Push  [weight=2];
+  Push -> ibd;
+  ibd -> p4t;
+  p4t -> aforest [weight=2];
+  aforest -> Want [weight=3];
+  Want -> sds  [weight=3];
+  sds -> n39  [weight=3];
+  n39 -> fteotdgs  [weight=3];
+  fteotdgs -> endsong;
+  
+  // helsinki
+  Alone -> poy;
+  poy -> kyoto [weight=3];
+  kyoto -> anlt  [weight=4];
+  anlt -> charlotte  [weight=2];
+  charlotte -> Lovesong  [weight=2];
+  Lovesong -> iotws;
+  iotws -> Cold;
+  Cold -> Burn  [weight=5];
+  Burn -> fs;
+  fs -> hungryghost  [weight=5];
+  hungryghost -> Push  [weight=4];
+  Push -> Want  [weight=4];
+  sds -> fteotdgs  [weight=3];
+  fteotdgs -> endsong;
+  
+  // stockholm
+  poy -> anlt;
+  Lovesong -> anif  [weight=5];
+  anif -> Burn;
+  Push -> aforest;
+  
+  // oslo
+  Closedown -> kyoto;
+  anif -> Cold  [weight=4];
+  
+  // gothenburg
+  poy -> Burn2;
+  Burn2 -> anlt;
+  anif -> figurehead;
+  figurehead -> asd;
+  asd -> hanginggarden;
+  hanginggarden -> Push;
+  Push -> p4t  [weight=2];
+  p4t -> Want;
+  sds -> fs2;
+  fs2 -> fteotdgs;
+  
+  // copenhagen
+  hungryghost -> prayers;
+  prayers -> Push;
+  
+  // hamburg
+}
