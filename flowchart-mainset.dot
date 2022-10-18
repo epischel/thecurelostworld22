@@ -43,7 +43,6 @@ digraph G {
   Lovesong -> iotws;
   iotws -> Cold;
   Cold -> Burn  [weight=5];
-  Burn -> fs;
   fs -> hungryghost  [weight=5];
   hungryghost -> Push  [weight=4];
   Push -> Want  [weight=4];
