@@ -1,0 +1,50 @@
+
+digraph G {
+  // https://graphviz.christine.website
+  
+  p4t [label="Play for today"];
+  charlotte [label="Charlotte Sometimes"]
+  asd [label="A Strange Day"]
+  aforest [label="A Forest"]
+  hundred [label="100 years"]
+  lastday [label="Last Day of Summer"]
+  
+  
+  // riga
+  Plainsong -> Disintegration; 
+  
+  // helsinki
+  start -> Plainsong;
+  AtNight -> M [weight="2"];
+  M -> p4t;
+  p4t -> aforest [weight="2"];
+  
+  // stockholm
+  start -> Cold;
+  Cold -> asd;
+  asd -> hundred;
+  
+  // oslo
+  
+  // gothenburg
+  start -> iotwcs;
+  iotwcs -> drowning;
+  drowning -> charlotte [weight="2"];
+  charlotte -> aforest;
+  
+  // copenhagen
+  start -> figurehead;
+  figurehead -> asd;
+  asd -> charlotte;
+  charlotte -> p4t;
+  
+  // hamburg
+  start -> lastday;
+  lastday -> figurehead;
+  figurehead -> AtNight;
+  AtNight -> charlotte;
+  
+  // leipzig
+  figurehead -> drowning
+  
+}
